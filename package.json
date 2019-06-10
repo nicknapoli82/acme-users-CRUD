@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --open",
     "build-watch": "webpack --watch --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "db": "json-server --watch db.json"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
   },
   "dependencies": {
     "axios": "^0.19.0",
+    "json-server": "^0.15.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1"

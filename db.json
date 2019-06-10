@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "name": "blahblah",
+      "admin": true,
+      "id": 1
+    },
+    {
+      "name": "jerk butt",
+      "admin": false,
+      "id": 3
+    },
+    {
+      "name": "Dave",
+      "admin": true,
+      "id": 2
+    }
+  ]
+}

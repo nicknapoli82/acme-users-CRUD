@@ -1,0 +1,16 @@
+* React - ACME CRUD for FSA class
+** Requires use of json-server
+*To start the server*
+npm run db
+
+Then magic happens :)
+
+** All the extra stuff
+npm install
+Get all the junk I require to make it work
+
+npm run build
+Makes the thing 
+
+** In public folder, open index.html
+Magic!!!
