@@ -48,19 +48,17 @@ export default class Main extends React.Component {
           <h2>Create a User</h2>
           <UserForm createUser={this.createUser} users={this.state.users}/>
         </div>
-        <ul>
-          <Router>
+        <Router>
+          <ul>
             {
               users ? users.map((user)=>{
                 return <li key={user.id}><Link to={`/${user.id}`}>{user.name}</Link></li>;
               }) : <p>Nothing (I feel so empty inside</p>
-                              }
-          </Router>
-        </ul>            
-        <Router>
+            }
+          </ul>            
           <Route path="/:id" render={(match)=> <UserUpdate match={match} users={users} updateUsers={this.updateUsers}/>}/>
         </Router>
       </div>
-    );
+            );
+    }
   }
-}

@@ -1,19 +1,119 @@
 {
   "users": [
     {
-      "name": "blahblah",
-      "admin": true,
+      "name": "Nicholas Napoli",
+      "admin": false,
       "id": 1
     },
     {
-      "name": "jerk butt",
+      "name": "Conner Stennett",
       "admin": false,
+      "id": 2
+    },
+    {
+      "name": "Gabriel Lebec",
+      "admin": true,
       "id": 3
     },
     {
-      "name": "Dave",
+      "name": "Thom Smith",
       "admin": true,
-      "id": 2
+      "id": 4
+    },
+    {
+      "name": "Arthur Sandro",
+      "admin": false,
+      "id": 5
+    },
+    {
+      "name": "Blake Alvernaz",
+      "admin": false,
+      "id": 6
+    },
+    {
+      "name": "Buddy Galletti",
+      "admin": false,
+      "id": 7
+    },
+    {
+      "name": "Dan Schwab",
+      "admin": true,
+      "id": 8
+    },
+    {
+      "name": "Eric P. Katz",
+      "admin": true,
+      "id": 9
+    },
+    {
+      "name": "Henry Adema",
+      "admin": false,
+      "id": 11
+    },
+    {
+      "name": "Hugo",
+      "admin": false,
+      "id": 12
+    },
+    {
+      "name": "Jonathan Mann",
+      "admin": true,
+      "id": 13
+    },
+    {
+      "name": "Justin Cook",
+      "admin": false,
+      "id": 14
+    },
+    {
+      "name": "Katherine Peterson",
+      "admin": false,
+      "id": 15
+    },
+    {
+      "name": "Matt Garcia",
+      "admin": false,
+      "id": 16
+    },
+    {
+      "name": "Nica Zulueta",
+      "admin": false,
+      "id": 17
+    },
+    {
+      "name": "Nicholas Regoli",
+      "admin": false,
+      "id": 18
+    },
+    {
+      "name": "Nick Grant",
+      "admin": true,
+      "id": 19
+    },
+    {
+      "name": "Preston",
+      "admin": true,
+      "id": 20
+    },
+    {
+      "name": "Ryan Moore",
+      "admin": false,
+      "id": 21
+    },
+    {
+      "name": "Sam Olivas",
+      "admin": false,
+      "id": 22
+    },
+    {
+      "name": "Schuyler Lawrence",
+      "admin": false,
+      "id": 23
+    },
+    {
+      "name": "Stephanie Stampher",
+      "admin": false,
+      "id": 24
     }
   ]
 }
