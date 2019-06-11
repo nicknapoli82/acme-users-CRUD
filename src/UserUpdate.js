@@ -23,7 +23,7 @@ export default class UserUpdate extends React.Component  {
 
   submitForm(e) {
     e.preventDefault();
-    const {match, history} = this.props.match;
+    const {match, history} = this.props;
     const user = {
       id: match.params.id,
       name: this.state.nameValue,
@@ -35,7 +35,7 @@ export default class UserUpdate extends React.Component  {
   }
 
   deleteUser(e) {
-    const {match, history} = this.props.match;
+    const {match, history} = this.props;
     const user = {
       id: match.params.id,
       name: this.state.nameValue,
@@ -49,14 +49,13 @@ export default class UserUpdate extends React.Component  {
   componentDidMount() {
     const {users, match} = this.props;
     if(!users) return;
-    const user = users.filter(user =>  Number(match.match.params.id) === user.id)[0];
+    const user = users.filter(user =>  Number(match.params.id) === user.id)[0];
     if (user)
       this.setState({nameValue: user.name, admin: user.admin});
   }
 
   componentDidUpdate() {
-    const {users} = this.props;
-    const {match, history} = this.props.match;
+    const {users, match, history} = this.props;
     if (Number(match.params.id) !== this.state.id)
       axios.get(`http://localhost:3000/users/${match.params.id}`)
            .then(users => {
@@ -71,10 +70,10 @@ export default class UserUpdate extends React.Component  {
   render() {
     const {users, match} = this.props;
     if (!users) return null;
-    const user = users.filter(user =>  Number(match.match.params.id) === user.id)[0];
+    const user = users.filter(user =>  Number(match.params.id) === user.id)[0];
     if (user === undefined) return null;
     return (
-      <div>
+      <div className="create-wrapper">
         <h2>Update information for {user.name}</h2>
         <form onSubmit={this.submitForm}>
           <label htmlFor="adminBox">Admin:
@@ -84,8 +83,8 @@ export default class UserUpdate extends React.Component  {
           <input type="text" value={this.state.nameValue} onChange={this.updateNameValue} />
           <button type="submit">Update</button>
           <button onClick={this.deleteUser}>Delete</button>
+          <Link to="/"><button>Cancel</button></Link>
         </form>
-        <Link to="/">Cancel</Link>
       </div>
     ); 
   }
